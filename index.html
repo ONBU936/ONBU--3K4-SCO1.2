@@ -105,14 +105,12 @@
         }
 
         .header-logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--teal-main);
-            background-color: #000; /* Nền đen tôn logo Teal */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* giữ nguyên logo */
+    border: none;        /* ❌ bỏ viền */
+    background: none;    /* ❌ bỏ nền đen */
+    box-shadow: none;    /* ❌ bỏ bóng */        }
 
         .header-text {
             display: flex;
@@ -360,7 +358,7 @@
         <!-- App Header -->
         <header class="app-header">
             <div class="header-content">
-                <img src="ONBU_Logo symbol-09.png" alt="Logo Học Viện Ôn Ngọc BeU" class="header-logo" onerror="this.onerror=null; this.src='https://placehold.co/50x50/27bdbe/ffffff?text=ONBU';">
+                <img src="images/logo.png" alt="Logo Học Viện Ôn Ngọc BeU" class="header-logo" onerror="this.onerror=null; this.src='https://placehold.co/50x50/27bdbe/ffffff?text=ONBU';">
                 <div class="header-text">
                     <h1 class="app-font">Lớp HSK2</h1>
                     <p class="app-font">Học Viện Ôn Ngọc BeU</p>
